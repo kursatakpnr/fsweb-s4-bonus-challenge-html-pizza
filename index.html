@@ -27,7 +27,7 @@
                 <span class="code-text">KOD ACIKTIRIR</span>
                 <span class="pizza-text">PİZZA, DOYURUR</span>
               </h1>
-              <button class="hero-cta-button">ACIKTIM</button>
+              <a href="#pizzaModal" class="hero-cta-button">ACIKTIM</a>
             </div>
           </div>
         </div>
@@ -72,20 +72,20 @@
                 <div class="card-content">
                   <h3>Özel<br>Lezzetus</h3>
                   <p>Position:Absolute Acı Burger</p>
-                  <button class="order-btn">SİPARİŞ VER</button>
+                  <a href="#pizzaModal" class="order-btn">SİPARİŞ VER</a>
                 </div>
               </div>
               <div class="offer-cards-small">
                 <div class="offer-card small">
                   <div class="card-content">
                     <h4>Hackathlon<br>Burger Menü</h4>
-                    <button class="order-btn">SİPARİŞ VER</button>
+                    <a href="#pizzaModal" class="order-btn">SİPARİŞ VER</a>
                   </div>
                 </div>
                 <div class="offer-card small dark">
                   <div class="card-content">
                     <h4><span class="red-text">Çoooook</span> <span class="black-text">hızlı<br>npm gibi kurye</span></h4>
-                    <button class="order-btn">SİPARİŞ VER</button>
+                    <a href="#pizzaModal" class="order-btn">SİPARİŞ VER</a>
                   </div>
                 </div>
               </div>
@@ -171,6 +171,179 @@
       </div>
     </main>
 
+
+      </div>
+    </main>
+
+    <!-- Modal Pizza Sipariş Formu -->
+    <div id="pizzaModal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Pizza Sipariş Formu</h2>
+          <a href="#" class="modal-close">&times;</a>
+        </div>
+        
+        <div class="modal-body">
+          <div class="pizza-header">
+            <div class="pizza-image-container">
+              <img src="./public/assets/iteration-2/pictures/form-banner.png" alt="Position Absolute Acı Pizza" class="pizza-main-image">
+            </div>
+            <div class="pizza-info">
+              <h3 class="pizza-title">Position Absolute Acı Pizza</h3>
+              <div class="pizza-price-large">85.50₺</div>
+              <div class="pizza-rating">
+                <span class="rating">4.9</span>
+                <span class="reviews">(200)</span>
+              </div>
+              <p class="pizza-description">
+                Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen, genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir. Küçük bir pizzaya bazen pizzetta denir.
+              </p>
+            </div>
+          </div>
+
+          <form class="pizza-order-form">
+            <!-- Boyut ve Hamur Seçimi -->
+            <div class="form-row">
+              <div class="form-group">
+                <h4>Boyut Seç <span class="required">*</span></h4>
+                <div class="size-options">
+                  <label class="radio-option">
+                    <input type="radio" name="size" value="small" required>
+                    <span class="radio-custom"></span>
+                    <span class="option-text">S</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="size" value="medium" required>
+                    <span class="radio-custom"></span>
+                    <span class="option-text">M</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="size" value="large" required>
+                    <span class="radio-custom"></span>
+                    <span class="option-text">L</span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <h4>Hamur Seç <span class="required">*</span></h4>
+                <select name="dough" required class="form-select">
+                  <option value="">Hamur Kalınlığı</option>
+                  <option value="thin">Süper İnce</option>
+                  <option value="normal">İnce</option>
+                  <option value="thick">Kalın</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Ek Malzemeler -->
+            <div class="form-group">
+              <h4>Ek Malzemeler</h4>
+              <p class="extras-info">En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
+              <div class="extras-grid">
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="pepperoni">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Pepperoni</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="tavuk-izgara">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Tavuk Izgara</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="misir">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Mısır</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="sarımsak">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Sarımsak</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="ananas">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Ananas</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="sosis">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Sosis</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="sogan">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Soğan</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="sucuk">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Sucuk</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="biber">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Biber</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="kabak">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Kabak</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="kanada-jambonu">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Kanada Jambonu</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="domates">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Domates</span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="extras" value="jalapeno">
+                  <span class="checkbox-custom"></span>
+                  <span class="option-text">Jalapeno</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Sipariş Notu -->
+            <div class="form-group">
+              <h4>Sipariş Notu</h4>
+              <textarea name="note" placeholder="Siparişine eklemek istediğin bir not var mı?" class="form-textarea" rows="3"></textarea>
+            </div>
+
+            <!-- Sipariş Özeti -->
+            <div class="order-summary-section">
+              <div class="quantity-price-container">
+                <div class="quantity-controls">
+                  <button type="button" class="quantity-btn minus">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn plus">+</button>
+                </div>
+              </div>
+              
+              <div class="order-summary">
+                <h4>Sipariş Toplamı</h4>
+                <div class="summary-row">
+                  <span>Seçimler</span>
+                  <span class="selections-price">25.00₺</span>
+                </div>
+                <div class="summary-row total-row">
+                  <span>Toplam</span>
+                  <span class="total-price">110.50₺</span>
+                </div>
+                <button type="submit" class="order-submit-btn">SİPARİŞ VER</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -230,6 +403,7 @@
         </div>
       </div>
     </footer>
+
   </body>
 
 </html>
