@@ -1,26 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/workintech.svg" />
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workintech + 🍕</title>
+    <title>Teknolojik Yemekler - Pizza Sipariş</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Barlow:wght@300;400;500;600;700&family=Quattrocento:wght@400;700&family=Satisfy&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div id="app">
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s5-bonus-challenge-html-pizza" target="_blank">
-          <img src="./workintech.svg" class="logo" alt="Workintech logo">
-        </a>
-        <h1>Hello Coder!</h1>
-        <p class="read-the-docs">
-          Click on the Workintech logo to see the Readme of the project
-        </p>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <img src="./public/assets/iteration-1/logo.svg" alt="Teknolojik Yemekler" class="logo">
+          <h1 class="hero-title">
+            <span class="code-text">KOD AÇIKTIRIR</span><br>
+            <span class="pizza-text">PİZZA, DOYURUR</span>
+          </h1>
+          <button class="cta-button">ACIKTIM</button>
+        </div>
+        <div class="hero-image">
+          <img src="./public/assets/iteration-1/home-banner.png" alt="Pizza">
+        </div>
       </div>
-    </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-section">
+      <div class="container">
+        <div class="nav-pills">
+          <span class="nav-pill active">Özel Lezzetus</span>
+          <span class="nav-pill">Hackathlon Burger Menu</span>
+          <span class="nav-pill">Pizza</span>
+          <span class="nav-pill">Burger</span>
+          <span class="nav-pill">Kızartmalar</span>
+          <span class="nav-pill">Fast Food</span>
+          <span class="nav-pill">Gazlı İçecek</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Pizza Cards Section -->
+        <section class="menu-section">
+          <div class="menu-grid">
+            <!-- Special Offers -->
+            <div class="special-offers">
+              <div class="offer-card large">
+                <h3>Özel Lezzetus</h3>
+                <p>Position: Absolute Acı Burger</p>
+                <button class="order-btn">SİPARİŞ VER</button>
+              </div>
+              <div class="offer-cards-small">
+                <div class="offer-card small">
+                  <h4>Hackathlon Burger Menu</h4>
+                  <button class="order-btn">SİPARİŞ VER</button>
+                </div>
+                <div class="offer-card small dark">
+                  <h4>Çoooook hızlı npm gibi kurye</h4>
+                  <button class="order-btn">SİPARİŞ VER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Menu -->
+        <section class="popular-menu">
+          <h2>en çok paketlenen menüler</h2>
+          <div class="menu-categories">
+            <div class="category-icons">
+              <div class="category-icon active">
+                <img src="./public/assets/iteration-2/icons/1.svg" alt="Icon 1">
+                <span>Ramen</span>
+              </div>
+              <div class="category-icon">
+                <img src="./public/assets/iteration-2/icons/2.svg" alt="Icon 2">
+                <span>Pizza</span>
+              </div>
+              <div class="category-icon">
+                <img src="./public/assets/iteration-2/icons/3.svg" alt="Icon 3">
+                <span>Burger</span>
+              </div>
+              <div class="category-icon">
+                <img src="./public/assets/iteration-2/icons/4.svg" alt="Icon 4">
+                <span>French Fries</span>
+              </div>
+              <div class="category-icon">
+                <img src="./public/assets/iteration-2/icons/5.svg" alt="Icon 5">
+                <span>Fast Food</span>
+              </div>
+              <div class="category-icon">
+                <img src="./public/assets/iteration-2/icons/6.svg" alt="Icon 6">
+                <span>Soft Drinks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="food-grid">
+            <div class="food-card">
+              <img src="./public/assets/iteration-2/pictures/food-1.png" alt="Terminal Pizza">
+              <h3>Terminal Pizza</h3>
+              <div class="food-info">
+                <span class="rating">4.9</span>
+                <span class="reviews">(200)</span>
+                <span class="price">60₺</span>
+              </div>
+            </div>
+            <div class="food-card">
+              <img src="./public/assets/iteration-2/pictures/food-2.png" alt="Position Absolute Acı Pizza">
+              <h3>Position Absolute Acı Pizza</h3>
+              <div class="food-info">
+                <span class="rating">4.9</span>
+                <span class="reviews">(928)</span>
+                <span class="price">85₺</span>
+              </div>
+            </div>
+            <div class="food-card">
+              <img src="./public/assets/iteration-2/pictures/food-3.png" alt="useEffect Tavuklu Burger">
+              <h3>useEffect Tavuklu Burger</h3>
+              <div class="food-info">
+                <span class="rating">4.9</span>
+                <span class="reviews">(462)</span>
+                <span class="price">75₺</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./public/assets/iteration-2/footer/logo-footer.svg" alt="Teknolojik Yemekler">
+            <div class="footer-contact">
+              <div class="contact-item">
+                <img src="./public/assets/iteration-2/footer/icons/icon-1.png" alt="Location">
+                <span>341 Londonderry Road, Istanbul Türkiye</span>
+              </div>
+              <div class="contact-item">
+                <img src="./public/assets/iteration-2/footer/icons/icon-2.png" alt="Email">
+                <span>aciktim@teknolojikyemekler.com</span>
+              </div>
+              <div class="contact-item">
+                <img src="./public/assets/iteration-2/footer/icons/icon-3.png" alt="Phone">
+                <span>+90 216 123 45 67</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-menu">
+            <h4>Sıcak Menü</h4>
+            <ul>
+              <li>Terminal Pizza</li>
+              <li>5 Kişilik Hackathlon Pizza</li>
+              <li>useEffect Tavuklu Pizza</li>
+              <li>Beyaz Console Frosty</li>
+              <li>Testler Geçti Mutlu Burger</li>
+              <li>Position Absolute Acı Burger</li>
+            </ul>
+          </div>
+
+          <div class="footer-instagram">
+            <h4>Instagram</h4>
+            <div class="instagram-grid">
+              <img src="./public/assets/iteration-2/footer/insta/li-0.png" alt="Instagram 1">
+              <img src="./public/assets/iteration-2/footer/insta/li-1.png" alt="Instagram 2">
+              <img src="./public/assets/iteration-2/footer/insta/li-2.png" alt="Instagram 3">
+              <img src="./public/assets/iteration-2/footer/insta/li-3.png" alt="Instagram 4">
+              <img src="./public/assets/iteration-2/footer/insta/li-4.png" alt="Instagram 5">
+              <img src="./public/assets/iteration-2/footer/insta/li-5.png" alt="Instagram 6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
