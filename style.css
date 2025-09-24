@@ -376,13 +376,14 @@ body {
 }
 
 .food-card.large-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
   flex-shrink: 0;
   border-radius: 50%;
   margin: 1rem auto 0.5rem;
   display: block;
+  padding: 10px;
 }
 
 .food-content {
@@ -537,15 +538,15 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    min-height: 60vh;
+    min-height: 100vh;
   }
   
   .hero-banner {
-    height: 60vh;
+    height: 100vh;
   }
   
   .hero-banner img {
-    object-fit: contain;
+    object-fit: cover;
   }
   
   .hero-subtitle {
@@ -591,12 +592,20 @@ body {
   }
   
   .food-card.large-card img {
-    height: 250px;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
   }
   
   .category-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
-    justify-content: center;
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   .category-icon {
@@ -626,11 +635,21 @@ body {
   }
   
   .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   .nav-item {
     font-size: 0.95rem;
+  }
+  
+  .offer-card.large h3 {
+    font-size: 2.35rem;
   }
 }
 
